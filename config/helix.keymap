@@ -30,8 +30,7 @@ default_layer {
 &kp ESC    &kp A     &kp S    &kp D    &kp F     &kp G                       &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z     &kp X    &kp C    &kp V     &kp B                       &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
 &mo ADJUST &kp LCTRL &kp LALT &kp LGUI &mo LOWER &kp SPACE &kp LBKT &kp RBKT &kp SPACE &mo RAISE &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
-// &trans     &trans   &trans &trans   &trans   &trans    &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
-
+&trans     &trans   &trans &trans   &trans   &trans    &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
 >;
               };
               lower_layer {
