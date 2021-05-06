@@ -1,6 +1,6 @@
 on: [push, pull_request, workflow_dispatch]
 
-name: Build
+name: Build TBK Mini
 
 jobs:
   build:
@@ -33,29 +33,29 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (Helix Left)
-        run: west build -s zmk/app -b nrfmicro_13 -- -DSHIELD=helix_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Helix DTS File
+      - name: West Build (TBK Mini Left)
+        run: west build -s zmk/app -b nrfmicro_13 -- -DSHIELD=corne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: TBK Mini DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nrfmicro_13.dts.pre.tmp
-      - name: Helix Left Kconfig file
+      - name: TBK Mini Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 helix_left_nrfmicro_13.uf2
-      - name: Archive (Helix Left)
+        run: cp build/zephyr/zmk.uf2 corne_left_nrfmicro_13.uf2
+      - name: Archive (TBK Mini Left)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: helix_left_nrfmicro_13.uf2
-      - name: West Build (Helix Right)
-        run: west build --pristine -s zmk/app -b nrfmicro_13 -- -DSHIELD=helix_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          path: corne_left_nrfmicro_13.uf2
+      - name: West Build (TBK Mini Right)
+        run: west build --pristine -s zmk/app -b nrfmicro_13 -- -DSHIELD=corne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
-      - name: Helix Right Kconfig file
+      - name: TBK Mini Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 helix_right_nrfmicro_13.uf2
-      - name: Archive (Helix Right)
+        run: cp build/zephyr/zmk.uf2 corne_right_nrfmicro_13.uf2
+      - name: Archive (TBK Mini Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: helix_right_nrfmicro_13.uf2
+          path: corne_right_nrfmicro_13.uf2
