@@ -12,7 +12,7 @@
  #define DEFAULT 0
  #define LOWER  1
  #define RAISE  2
- #define FN 3
+ #define ADJ 3
 
 / {
        keymap {
