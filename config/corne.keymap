@@ -26,7 +26,7 @@
                 default_layer {
                         bindings = <
    &none  &kp Q       &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I        &kp O       &kp P          &none
-   &none  &mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G             &kp H        &mt LSHFT J   &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &none
+   &none  &mt LGUI A  &mt LALT S  &mt LCTRL D    &mt LSHFT F    &kp G             &kp H        &mt LSHFT J   &mt LCTRL K  &mt LALT L  &mt LGUI SQT   &none
    &none  &kp Z       &kp X       &kp C          &kp V          &kp B             &kp N        &kp M         &kp COMMA    &kp DOT     &kp FSLH       &none
                                   &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB     &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
                         >;
@@ -53,7 +53,7 @@
                 media_layer {
                         bindings = <
    &none  &none       &none       &none          &none          &none             &none        &none         &kp C_BRI_DN  &kp C_BRI_UP  &none          &none
-   &none  &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_DN  &kp LGUI       &none
+   &none  &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &none         &kp C_VOL_DN  &kp C_VOL_DN  &none          &none
    &none  &none       &none       &none          &none          &none             &none        &none         &none         &none         &none          &none
                                   &none          &none          &mo ADJ           &kp C_STOP   &kp C_PP      &kp K_MUTE
                         >;
