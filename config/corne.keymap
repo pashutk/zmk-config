@@ -23,14 +23,14 @@
                 compatible = "zmk,combos";
                 combo_prev {
                     timeout-ms = <50>;
-                    key-positions = <7 19>;
+                    key-positions = <8 20>;
                     layers = <NAV>;
                     bindings = <&kp LG(LS(LBRC))>;
                 };
 
                 combo_next {
                     timeout-ms = <50>;
-                    key-positions = <8 20>;
+                    key-positions = <9 21>;
                     layers = <NAV>;
                     bindings = <&kp LG(LS(RBRC))>;
                 };
