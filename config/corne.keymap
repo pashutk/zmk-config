@@ -24,13 +24,15 @@
                 combo_prev {
                     timeout-ms = <50>;
                     key-positions = <7 19>;
-                    bindings = <&kp LG(LS(LBRK))>;
+                    layers = <NAV>;
+                    bindings = <&kp LG(LS(LBRC))>;
                 };
 
                 combo_next {
                     timeout-ms = <50>;
                     key-positions = <8 20>;
-                    bindings = <&kp LG(LS(RBRK))>;
+                    layers = <NAV>;
+                    bindings = <&kp LG(LS(RBRC))>;
                 };
         };
 
@@ -84,7 +86,7 @@
 
                 sym_layer {
                         bindings = <
-   &none  &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RPAR          &none        &none         &none        &none       &none          &none
+   &none  &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &none        &none         &none        &none       &none          &none
    &none  &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI       &none
    &none  &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none          &none
                                   &kp LPAR       &kp RPAR       &kp UNDER         &none        &none         &mo ADJ
