@@ -81,10 +81,10 @@
 
                 media_layer {
                         bindings = <
-   &none  &none       &none       &none          &none          &none             &none        &none         &kp C_BRI_DN  &kp C_BRI_UP  &none          &none
-   &none  &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_DN  &kp LGUI       &none
-   &none  &none       &none       &none          &none          &none             &none        &none         &none         &none         &none          &none
-                                  &none          &none          &mo ADJ           &kp C_STOP   &kp C_PP      &kp K_MUTE
+   &none  &none       &none       &none          &none          &none             &kp LG(LS(N4))  &none         &kp C_BRI_DN  &kp C_BRI_UP  &none          &none
+   &none  &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none           &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_UP  &kp LGUI       &none
+   &none  &none       &none       &none          &none          &none             &none           &none         &none         &none         &none          &none
+                                  &none          &none          &mo ADJ           &kp C_STOP      &kp C_PP      &kp K_MUTE
                         >;
                 };
 
