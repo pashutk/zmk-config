@@ -46,7 +46,7 @@
                     key-positions = <13 14>;
                     layers = <NUM>;
                     bindings = <&kp EQUAL>, <&kp GT>;
-                }
+                };
         };
 
         keymap {
