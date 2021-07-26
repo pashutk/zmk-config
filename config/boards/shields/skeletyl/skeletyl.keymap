@@ -42,7 +42,7 @@
                 };
                 
                 combo_fat_arrow {
-                    timout-ms = <50>;
+                    timeout-ms = <50>;
                     key-positions = <13 14>;
                     layers = <NUM>;
                     bindings = <&kp EQUAL  &kp GT>;
