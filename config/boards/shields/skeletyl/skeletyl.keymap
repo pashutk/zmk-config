@@ -45,7 +45,7 @@
                     timout-ms = <50>;
                     key-positions = <13 14>;
                     layers = <NUM>;
-                    bindings = <&kp EQUAL>, <&kp GT>;
+                    bindings = <&kp EQUAL  &kp GT>;
                 };
         };
 
