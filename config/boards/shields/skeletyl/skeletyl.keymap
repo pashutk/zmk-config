@@ -41,11 +41,18 @@
                     bindings = <&kp LG(LS(RBRC))>;
                 };
                 
-                combo_fat_arrow {
+                combo_left_sqrbrkt {
                     timeout-ms = <50>;
-                    key-positions = <13 14>;
-                    layers = <NUM>;
-                    bindings = <&kp EQUAL>, <&kp GT>;
+                    key-positions = <0 10>;
+                    layers = <BASE>;
+                    bindings = <&kp LBKT>;
+                };
+
+                combo_right_sqrbrkt {
+                    timeout-ms = <50>;
+                    key-positions = <4 14>;
+                    layers = <BASE>;
+                    bindings = <&kp RBKT>;
                 };
         };
 
