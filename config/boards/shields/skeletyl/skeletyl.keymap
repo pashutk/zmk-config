@@ -135,7 +135,7 @@
                 exp_layer {
                         bindings = <
    &kp F24  &none  &kp C_AL_IM  &none &none  &none        &none   &none   &none   &none
-   &none  &none    &none    &none       &none   &none  &none  &none   &none   &none
+   &none  &kp F1    &none    &none       &none   &none  &none  &none   &none   &none
    &none  &none  &kp C_AL_WWW  &none        &none         &none        &none   &none   &none   &none
                                &none         &none        &none         &none        &none   &none
                         >;
