@@ -125,10 +125,10 @@
 
                 adj_layer {
                         bindings = <
-   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &none        &none   &none   &none   &none
-   &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &reset       &bootloader   &bootloader  &reset  &none   &none   &none
-   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none        &none         &none        &none   &none   &none   &none
-                               &none         &none        &none         &none        &none   &none
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &none        &none       &none   &none   &none
+   &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &sys_reset   &bootloader   &bootloader  &sys_reset  &none   &none   &none
+   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none        &none         &none        &none       &none   &none   &none
+                               &none         &none        &none         &none        &none       &none
                         >;
                 };
                 
