@@ -11,6 +11,7 @@
 #define SYM 5
 #define FUN 6
 #define ADJ 7
+#define EXP 8
 
 / {
         behaviors {
@@ -82,7 +83,7 @@
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
    &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &none         &none        &none       &none
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
-                           &mo ADJ        &none          &none             &none        &none         &none
+                           &mo ADJ        &none          &none             &mo EXP      &none         &none
                         >;
                 };
 
@@ -109,7 +110,7 @@
    &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &none        &none         &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
    &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
-                           &kp LPAR       &kp RPAR       &kp UNDER         &none        &none         &mo ADJ
+                           &kp LPAR       &kp RPAR       &lt EXP UNDER     &none        &none         &mo ADJ
                         >;
                 };
 
@@ -127,6 +128,15 @@
    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &none        &none   &none   &none   &none
    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &reset       &bootloader   &bootloader  &reset  &none   &none   &none
    &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none        &none         &none        &none   &none   &none   &none
+                               &none         &none        &none         &none        &none   &none
+                        >;
+                };
+                
+                exp_layer {
+                        bindings = <
+   &F24  &none  &kp C_AL_IM  &none &none  &none        &none   &none   &none   &none
+   &none  &none    &none    &none       &none   &none  &none  &none   &none   &none
+   &none  &none  &kp C_AL_WWW  &none        &none         &none        &none   &none   &none   &none
                                &none         &none        &none         &none        &none   &none
                         >;
                 };
