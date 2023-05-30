@@ -83,7 +83,7 @@
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
    &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &none         &none        &none       &none
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
-                           &mo ADJ        &none          &none             &mo EXP      &none         &none
+                           &mo ADJ        &none          &none             &none        &none         &none
                         >;
                 };
 
