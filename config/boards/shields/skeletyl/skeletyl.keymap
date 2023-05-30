@@ -73,7 +73,7 @@
                         bindings = <
    &none     &none         &none          &none          &none             &kp LC(LG(Z))  &kp LG(V)   &kp LG(C)    &kp LG(X)   &kp LG(Z)
    &kp LGUI  &kp LALT      &kp LCTRL      &kp LSHFT      &none             &kp CAPS       &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT
-   &none     &none         &none          &none          &none             &kp INS        &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
+   &none     &none         &kp LG(F17)    &kp LG(F16)    &kp LG(F13)       &kp INS        &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
                            &none          &none          &none             &kp RET        &kp BSPC    &kp DEL
                         >;
                 };
@@ -82,7 +82,7 @@
                         bindings = <
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
    &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &none         &none        &none       &none
-   &none       &none       &kp LG(F17)    &kp LG(F16)    &kp LG(F13)       &none        &none         &none        &none       &none
+   &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
                            &mo ADJ        &none          &none             &mo EXP      &none         &none
                         >;
                 };
@@ -100,7 +100,7 @@
                         bindings = <
    &kp LBKT    &kp N7      &kp N8         &kp N9         &kp RBKT          &none        &none         &none        &none       &none
    &kp SQT     &kp N4      &kp N5         &kp N6         &kp EQUAL         &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
-   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &none        &none         &none        &none       &none
+   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &kp LG(F13)  &kp LG(F16)   &kp LG(F17)  &none       &none
                            &kp DOT        &kp N0         &kp MINUS         &none        &none         &none
                         >;
                 };
@@ -109,7 +109,7 @@
                         bindings = <
    &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &none        &none         &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
-   &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &kp LG(F13)  &kp LG(F16)   &kp LG(F17)        &none       &none
+   &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
                            &kp LPAR       &kp RPAR       &lt EXP UNDER     &none        &none         &mo ADJ
                         >;
                 };
