@@ -82,7 +82,7 @@
                         bindings = <
    &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
    &kp LGUI    &kp LALT    &kp LCTRL      &kp LSHFT      &none             &none        &none         &none        &none       &none
-   &none       &none       &none          &none          &none             &none        &none         &none        &none       &none
+   &none       &none       &kp LG(F17)    &kp LG(F16)    &kp LG(F13)       &none        &none         &none        &none       &none
                            &mo ADJ        &none          &none             &mo EXP      &none         &none
                         >;
                 };
@@ -109,7 +109,7 @@
                         bindings = <
    &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &none        &none         &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
-   &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
+   &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &kp LG(F13)  &kp LG(F16)   &kp LG(F17)        &none       &none
                            &kp LPAR       &kp RPAR       &lt EXP UNDER     &none        &none         &mo ADJ
                         >;
                 };
