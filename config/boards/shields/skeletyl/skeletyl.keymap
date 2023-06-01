@@ -55,6 +55,27 @@
                     layers = <BASE>;
                     bindings = <&kp RBKT>;
                 };
+
+                combo_lang_eng {
+                    timeout-ms = <50>;
+                    key-positions = <27 34>;
+                    layers = <BASE>;
+                    bindings = <&kp LG(F17)>;
+                };
+
+                combo_lang_ru {
+                    timeout-ms = <50>;
+                    key-positions = <26 34>;
+                    layers = <BASE>;
+                    bindings = <&kp LG(F16)>;
+                };
+
+                combo_lang_pl {
+                    timeout-ms = <50>;
+                    key-positions = <25 34>;
+                    layers = <BASE>;
+                    bindings = <&kp LG(F13)>;
+                };
         };
 
         keymap {
@@ -73,7 +94,7 @@
                         bindings = <
    &none     &none         &none          &none          &none             &kp LC(LG(Z))  &kp LG(V)   &kp LG(C)    &kp LG(X)   &kp LG(Z)
    &kp LGUI  &kp LALT      &kp LCTRL      &kp LSHFT      &none             &kp CAPS       &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT
-   &none     &none         &kp LG(F17)    &kp LG(F16)    &kp LG(F13)       &kp INS        &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
+   &none     &none         &none          &none          &none             &kp INS        &kp HOME    &kp PG_DN    &kp PG_UP   &kp END
                            &none          &none          &none             &kp RET        &lt MEGAFN BSPC    &kp DEL
                         >;
                 };
@@ -100,7 +121,7 @@
                         bindings = <
    &kp LBKT    &kp N7      &kp N8         &kp N9         &kp RBKT          &none        &none         &none        &none       &none
    &kp SQT     &kp N4      &kp N5         &kp N6         &kp EQUAL         &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
-   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &kp LG(F13)  &kp LG(F16)   &kp LG(F17)  &none       &none
+   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &none        &none         &none        &none       &none
                            &kp DOT        &lt MEGAFN N0         &kp MINUS         &none        &none         &none
                         >;
                 };
