@@ -48,11 +48,11 @@
                     bindings = <&kp LBKT>;
                 };
 
-                combo_right_sqrbrkt {
+                combo_tab {
                     timeout-ms = <50>;
                     key-positions = <4 14>;
                     layers = <BASE>;
-                    bindings = <&kp RBKT>;
+                    bindings = <&kp TAB>;
                 };
 
                 combo_lang_eng {
