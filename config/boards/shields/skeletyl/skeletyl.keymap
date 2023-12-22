@@ -129,7 +129,7 @@
 
                 sym_layer {
                         bindings = <
-   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &to 9        &none         &none        &none       &none
+   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &tog 9       &none         &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
    &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
                            &kp LPAR       &kp RPAR       &kp UNDER         &none        &none         &mo ADJ
@@ -165,7 +165,7 @@
 
                 gaming_layer {
                         bindings = <
-   &none       &kp Q       &kp W          &kp E          &kp R             &to 9        &none         &none        &none       &none
+   &none       &kp Q       &kp W          &kp E          &kp R             &tog 9       &none         &none        &none       &none
    &kp LSHIFT  &kp A       &kp S          &kp D          &kp F             &none        &none         &none        &none       &none
    &kp LCTRL   &none       &none          &none          &none             &none        &none         &none        &none       &none
                            &none          &kp SPACE      &none             &none        &none         &none
