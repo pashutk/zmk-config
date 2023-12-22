@@ -12,6 +12,7 @@
 #define FUN 6
 #define ADJ 7
 #define MEGAFN 8
+#define GAMING 9
 
 / {
         behaviors {
@@ -128,7 +129,7 @@
 
                 sym_layer {
                         bindings = <
-   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &none        &none         &none        &none       &none
+   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &to 9        &none         &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
    &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
                            &kp LPAR       &kp RPAR       &kp UNDER         &none        &none         &mo ADJ
@@ -159,6 +160,15 @@
    &kp LC(F13)  &kp LC(F16)  &kp LC(F17)  &kp LC(F18)  &kp LC(F19)    &kp LC(LS(F13))  &kp LC(LS(F16))  &kp LC(LS(F17))  &kp LC(LS(F18))  &kp LC(LS(F19))
    &kp LA(F13)  &kp LA(F16)  &kp LA(F17)  &kp LA(F18)  &kp LA(F19)    &kp LA(LS(F13))  &kp LA(LS(F16))  &kp LA(LS(F17))  &kp LA(LS(F18))  &kp LA(LS(F19))
                                &none         &none        &none         &none        &none   &none
+                        >;
+                };
+
+                gaming_layer {
+                        bindings = <
+   &none       &kp Q       &kp W          &kp E          &kp R             &to 9        &none         &none        &none       &none
+   &kp LSHIFT  &kp A       &kp S          &kp D          &kp F             &none        &none         &none        &none       &none
+   &kp LCTRL   &none       &none          &none          &none             &none        &none         &none        &none       &none
+                           &none          &kp SPACE      &none             &none        &none         &none
                         >;
                 };
         };
