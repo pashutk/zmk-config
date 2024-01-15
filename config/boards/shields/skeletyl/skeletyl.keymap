@@ -79,8 +79,8 @@
                 };
         };
 
-        macros: {
-                switch_ret {
+        macros {
+                switch_ret: switch_ret {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
                         wait-ms = <40>;
