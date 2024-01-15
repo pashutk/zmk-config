@@ -79,6 +79,19 @@
                 };
         };
 
+        macros: {
+                switch_ret {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <40>;
+                        tap-ms = <40>;
+                        bindings:
+                                = <&kp S &kp W &kp I &kp T &kp C &kp H>
+                                , <&kp RET>
+                                ;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -129,7 +142,7 @@
 
                 sym_layer {
                         bindings = <
-   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &tog 9       &none         &none        &none       &none
+   &kp LBRC    &kp AMPS    &kp STAR       &kp LPAR       &kp RBRC          &tog 9       &switch_ret   &none        &none       &none
    &kp COLON   &kp DLLR    &kp PRCNT      &kp CARET      &kp PLUS          &none        &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI
    &kp TILDE   &kp EXCL    &kp AT         &kp HASH       &kp PIPE          &none        &none         &none        &none       &none
                            &kp LPAR       &kp RPAR       &kp UNDER         &none        &none         &mo ADJ
